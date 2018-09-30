@@ -1,5 +1,5 @@
 
-k_fold <- function(listSize,k){
+k_fold_cross_validation <- function(listSize,k){
   
    ind_list  <- c(1:listSize)
    
@@ -22,11 +22,14 @@ k_fold <- function(listSize,k){
 
 
 '''
-> k_fold(10,2)
+> k_fold_cross_validation(10,2)
+
      [,1] [,2] [,3] [,4] [,5]
 [1,]    4    9    8    1    3
 [2,]    2    6    5    7   10
-> k_fold(10,5)
+
+> k_fold_cross_validation(10,5)
+
       [,1] [,2]
 [1,]    4    5
 [2,]    7    8
