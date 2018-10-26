@@ -11,7 +11,7 @@ k_fold_cross_validation <- function(listSize,k){
   len_row <- as.integer(len_row)
   
   missing  <- 0 
-  if (ceiling(len_row-1)*k != length(ind_list))
+  if (ceiling(len_row-1)*k != length(ind_list)) ## burayı ditekrar düzenle
     missing  <-length(ind_list) -  len_row*k
  
   
