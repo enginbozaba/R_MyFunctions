@@ -1,4 +1,3 @@
-
 #Lesson 1 
 '''
 ls() : objects list
@@ -12,7 +11,6 @@ The general form log(x, base) computes logarithms with base base
 
 exp()
 abs(-12):12
-
 '''
 
 #Lesson 2 : Create and Work with Vectors and Matrices in R
@@ -57,9 +55,7 @@ matris+10
 matris-41
 matris/2
 
-
 '''
-
 a <- 5
 a
 startStopArr <- 1:10
@@ -130,7 +126,6 @@ Aynı tür:         Atomic vektör
 Farklı tür:       List(generic vector)
 Sıralı karakter:  Factor
 
-
 complex e örnek 1+2i
 liste e örnek list("engin",111,1+2i)
 matrix e örnek matrix(data=1:9,nrow=3,ncol=3)
@@ -176,6 +171,5 @@ paste("al",1)
 while(kosul){
 ....
 }
-
 next : continue ya karşılık gelir, başa sarar
 '''
