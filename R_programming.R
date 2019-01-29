@@ -19,8 +19,10 @@ abs(-12):12
 '''
 start:stop
 c()
-seq()
-rep()
+seq() :seq(from, to, by= )
+rep() :rep(1:4, each = 2)       # not the same.
+       rep(1:4, c(2,2,2,2))     # same as second.
+
 
 if two vectors are of the save length, 
 we may add/subtract/mult/div corresponding elements
@@ -115,7 +117,7 @@ typeof():değişkenin türünü verir
 '''
 #Lesson 4 :
 '''
-          Homojen_veri_tipi         Heterojen_veri_tipi
+Homojen_veri_tipi         Heterojen_veri_tipi
 1d        Atomic vector             list
 2d        Matrix                    Data frame
 nd        Array
@@ -123,7 +125,7 @@ nd        Array
 en çok kullanılan : Vektörler,Liste,Matris,Data Frame
 Atomic Vektörler : character,numeric,integer(L ör:5L),logical,coöplex
 
-                  Vektörler
+Vektörler
 Aynı tür:         Atomic vektör
 Farklı tür:       List(generic vector)
 Sıralı karakter:  Factor
@@ -133,33 +135,33 @@ complex e örnek 1+2i
 liste e örnek list("engin",111,1+2i)
 matrix e örnek matrix(data=1:9,nrow=3,ncol=3)
 DataFrame e birden fazla veri tipi tutar , df<-data.frame(a=1:2,b=c("ali","bir")) 
- df$a , df$b
+df$a , df$b
 '''
 
 #Lesson 5
 '''
 func_name <- function(arg1,arg2){
-    ....
-    return result
-  }
+....
+return result
+}
 
 '''
 
 #Lesson 6:
 '''
 if ( kontrol1 ){
-  ...
+...
 } else if( kontrol2 ){
-  ...
+...
 }  else {
-  ...
+...
 }
 '''
 
 #Lesson 7: For:R da pek önerilemz, apply önerilir
 '''
 for (value in start:stop){
-    print(value)
+print(value)
 }
 
 paste() :yan yana vermeye yarar
@@ -172,9 +174,8 @@ paste("al",1)
 
 '''
 while(kosul){
-  ....
+....
 }
 
 next : continue ya karşılık gelir, başa sarar
 '''
-
